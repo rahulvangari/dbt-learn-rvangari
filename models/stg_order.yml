@@ -3,12 +3,8 @@ version: 2
 models:
   - name: orders
     columns: 
-      - name: status
+      - name: order_id
         tests:
-          - accepted_values:
-              values:
-                - completed
-                - shipped
-                - returned
-                - placed
-                - return_pending
+          - unique
+          - not_null
+
