@@ -4,6 +4,7 @@ models:
   - name: orders
     columns: 
       - name: order_id
+        description: Primary key for orders.
         tests:
           - unique
           - not_null
